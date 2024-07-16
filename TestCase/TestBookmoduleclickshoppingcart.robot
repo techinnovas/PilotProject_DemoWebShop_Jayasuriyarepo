@@ -4,8 +4,8 @@ Library    SeleniumLibrary
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/Loginresourcebook.robot
 Resource    ../Resources/bookmoduleresource.robot
-Test Setup    open the browser
-Test Teardown    close browser session
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
 Library    DataDriver    file=../TestData/Login_Book_Data.xlsx     sheet_name=ValidLogin
 Test Template    Login postive testcase1
 

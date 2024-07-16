@@ -10,7 +10,6 @@ Resource    ../Resources/GenericResources.robot
 Resource   ../Resources/bookmoduleresource.robot
 Test Setup    GenericResources.Open the Browser
 Test Teardown    GenericResources.Close Browser Session
-
 *** Test Cases ***
 # Test case for clicking product
 To verify product page

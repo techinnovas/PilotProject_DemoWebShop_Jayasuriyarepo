@@ -5,10 +5,10 @@ Test case for Book Module
 '''
 *** Settings ***
 Documentation    Test case for Bookmodule to click product and select add to cart option
-Resource    ../Resources/GenericResource.robot
+Resource    ../Resources/GenericResources.robot
 Resource   ../Resources/bookmoduleresource.robot
-Test Setup    GenericResource.Open a browser with url
-Test Teardown    GenericResource.Close the browser
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
 
 *** Test Cases ***
 #Test case to click product and select add to cart option
