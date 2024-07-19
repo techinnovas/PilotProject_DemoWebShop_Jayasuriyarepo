@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-19T09:43:12.870758" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Computers" source="E:\EXPLEO\Expleo Project\PilotProject_DemoWebShop_Jayasuriyarepo\TestCase\Test_Computers.robot">
+<test id="s1-t1" name="Select the Desktops from computers" line="11">
+<kw name="Open the Browser" owner="GenericResources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:13.382074" level="INFO">Opening browser 'Chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-19T09:43:13.382074" elapsed="8.077823"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-19T09:43:21.459897" elapsed="0.036694"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-19T09:43:21.496591" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:13.378553" elapsed="8.118038"/>
+</kw>
+<kw name="Click the Desktops option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:21.496591" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:21.496591" elapsed="0.741963"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:22.238554" level="INFO">Clicking link 'css:h2[class='title'] a[href='/desktops']'.</msg>
+<arg>${desktops}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:22.238554" elapsed="1.094090"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:23.334123" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/desktops?orderby=5.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:23.334123" elapsed="0.680371"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:24.015556" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:24.015556" elapsed="0.684270"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:24.701407" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4&amp;viewmode=grid.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:24.701407" elapsed="0.061862"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:24.766764" level="INFO">Clicking link '//a[normalize-space()='Build your own cheap computer']'.</msg>
+<arg>//a[normalize-space()='Build your own cheap computer']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:24.766764" elapsed="1.194566"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:25.963259" level="INFO">Verifying element 'xpath://div[@class='product-name']//child::h1[normalize-space()='Build your own cheap computer']' contains exact text 'Build your own cheap computer'.</msg>
+<arg>${desktop_assert}</arg>
+<arg>Build your own cheap computer</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-19T09:43:25.963259" elapsed="0.034413"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:21.496591" elapsed="4.501081"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-19T09:43:25.997672" elapsed="2.174421"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:25.997672" elapsed="2.174421"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:13.378553" elapsed="14.793540"/>
+</test>
+<test id="s1-t2" name="Select the Notebooks from computers" line="15">
+<kw name="Open the Browser" owner="GenericResources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:28.192662" level="INFO">Opening browser 'Chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-19T09:43:28.192662" elapsed="6.071910"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-19T09:43:34.267101" elapsed="0.024057"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-19T09:43:34.291158" elapsed="0.002602"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:28.190465" elapsed="6.104763"/>
+</kw>
+<kw name="Click the Notebooks option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:34.295228" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:34.295228" elapsed="0.798241"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:35.098310" level="INFO">Clicking link 'css:h2[class='title'] a[href='/notebooks']'.</msg>
+<arg>${Notebooks}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:35.098310" elapsed="1.184368"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:36.283582" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/notebooks?orderby=10.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:36.283582" elapsed="0.647923"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:36.932560" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/notebooks?orderby=10&amp;pagesize=8.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10&amp;pagesize=8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:36.932560" elapsed="0.051221"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:36.986299" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/notebooks?orderby=10&amp;viewmode=grid.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:36.986299" elapsed="0.056845"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:37.043144" level="INFO">Clicking link '//a[normalize-space()='14.1-inch Laptop']'.</msg>
+<arg>//a[normalize-space()='14.1-inch Laptop']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:37.043144" elapsed="1.610603"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:38.654575" level="INFO">Verifying element 'xpath://div[@class='product-name']//child::h1[normalize-space()='14.1-inch Laptop']' contains exact text '14.1-inch Laptop'.</msg>
+<arg>${notebook_assert}</arg>
+<arg>14.1-inch Laptop</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-19T09:43:38.654575" elapsed="0.018255"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:34.295228" elapsed="4.385738"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-19T09:43:38.680966" elapsed="2.149543"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:38.680966" elapsed="2.149543"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:28.190465" elapsed="12.640044"/>
+</test>
+<test id="s1-t3" name="Select the Accessories from computers" line="19">
+<kw name="Open the Browser" owner="GenericResources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:40.830509" level="INFO">Opening browser 'Chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-19T09:43:40.830509" elapsed="6.765861"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-19T09:43:47.596890" elapsed="0.031114"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-19T09:43:47.628004" elapsed="0.002656"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:40.830509" elapsed="6.800151"/>
+</kw>
+<kw name="Click the Accessories option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:47.632216" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:47.632216" elapsed="0.760996"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:48.394733" level="INFO">Clicking link 'css:h2[class='title'] a[href='/accessories']'.</msg>
+<arg>${Accessories}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:48.394733" elapsed="1.167661"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:49.565839" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/accessories?orderby=15.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:49.565839" elapsed="0.625598"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:50.192927" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/accessories?orderby=15&amp;pagesize=8.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15&amp;pagesize=8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:50.192927" elapsed="0.050988"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:50.246855" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/accessories?orderby=15&amp;viewmode=grid.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-19T09:43:50.246855" elapsed="0.049124"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:50.295979" level="INFO">Clicking link '//a[normalize-space()='TCP Self-Paced Training additional month']'.</msg>
+<arg>//a[normalize-space()='TCP Self-Paced Training additional month']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-19T09:43:50.295979" elapsed="1.866666"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-19T09:43:52.171034" level="INFO">Verifying element 'xpath://div[@class='product-name']' contains exact text 'TCP Self-Paced Training additional month'.</msg>
+<arg>${Accessories_assert}</arg>
+<arg>TCP Self-Paced Training additional month</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-19T09:43:52.171034" elapsed="0.034222"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:47.632216" elapsed="4.573040"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-19T09:43:52.209144" elapsed="2.202930"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:52.209144" elapsed="2.202930"/>
+</kw>
+<status status="PASS" start="2024-07-19T09:43:40.830509" elapsed="13.581565"/>
+</test>
+<doc>Tests to validate Computer dropdowns</doc>
+<status status="PASS" start="2024-07-19T09:43:12.984837" elapsed="41.427237"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test Computers">Test Computers</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
